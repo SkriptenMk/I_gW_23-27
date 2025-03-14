@@ -16,6 +16,13 @@ parts:
           title: Asymmetrische Verschlüsselung
   - caption: Vergangene Semester
     chapters:
+        - file: 241125/main.md
+          title: Einführung OOP
+          sections:
+          - file: 241125/modularitaet_oop.md
+            title: Modularität
+          - file: 241125/files.md
+            title: Arbeiten mit Dateien
         - file: 241202/main.md
           title: OOP
         - file: 241209/refactoring.md
