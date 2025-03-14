@@ -10,22 +10,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
+        
     - name: Install dependencies
       run: |
         pip install jupyter-book
         pip install ghp-import
+        
     - name: Build book
       run: |
         cd docs
         jupyter-book build .
-        touch _build/html/.nojekyll  # Fügt .nojekyll zur Build-Ausgabe hinzu
+        
+    - name: Create .nojekyll
+      run: |
+        touch docs/_build/html/.nojekyll
+        
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/_build/html
-        force_orphan: true  # Erzwingt einen sauberen gh-pages Branch
+        folder: docs/_build/html
+        branch: gh-pages
+        clean: true
