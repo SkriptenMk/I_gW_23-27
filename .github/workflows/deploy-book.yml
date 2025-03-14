@@ -22,10 +22,10 @@ jobs:
       cancel-in-progress: false
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4  # Aktualisiert auf v4
     
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4  # Aktualisiert auf v4
       with:
         python-version: '3.x'
         
@@ -41,13 +41,13 @@ jobs:
         touch _build/html/.nojekyll
         
     - name: Setup Pages
-      uses: actions/configure-pages@v2
+      uses: actions/configure-pages@v4  # Aktualisiert auf v4
         
     - name: Upload artifact
-      uses: actions/upload-pages-artifact@v1
+      uses: actions/upload-pages-artifact@v3  # Aktualisiert auf v3
       with:
         path: 'docs/_build/html'
         
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v1
+      uses: actions/deploy-pages@v4  # Aktualisiert auf v4
