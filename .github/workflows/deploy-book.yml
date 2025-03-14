@@ -8,9 +8,6 @@ on:
 jobs:
   deploy-book:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      pages: write
     steps:
     - uses: actions/checkout@v2
     
@@ -29,10 +26,9 @@ jobs:
         cd docs
         jupyter-book build .
         
-    - name: Prepare deployment
+    - name: Create .nojekyll
       run: |
         touch docs/_build/html/.nojekyll
-        cp docs/_build/html/.nojekyll .
         
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
@@ -40,5 +36,3 @@ jobs:
         folder: docs/_build/html
         branch: gh-pages
         clean: true
-        clean-exclude: |
-          .nojekyll
