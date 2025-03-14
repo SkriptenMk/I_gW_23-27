@@ -1,0 +1,23 @@
+KtoNr,Kto,Saldo
+1000,Kasse,2400
+1020,Bank,12900
+1100,F L&L,29600
+1200,Vorräte,5300
+1500,Maschinen,15800
+1510,Mobiliar,7200
+1530,Fahrzeuge,14000
+1540,Werkzeuge,3400
+1600,Liegenschaften,400000
+2000,V L&L,37500
+2451,Hypothek,200000
+2800,Eigenkapital,249100
+2891,Jahresgewinn,4000
+5000,Personalaufwand,65000
+6000,Raumaufwand,12000
+6500,Verwaltungsaufwand,3000
+6600,Werbeaufwand,4000
+6700,Übriger Betriebsaufwand,6000
+6800,Abschreibungen,5000
+6900,Zinsaufwand,1000
+9200,Gewinn,4000
+3400,Dienstleistungsertrag,100000

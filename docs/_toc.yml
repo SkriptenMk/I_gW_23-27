@@ -1,0 +1,23 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro.md
+parts:
+  - caption: Laufendes Semster
+    chapters:
+        - file: 250113/caesar_chiffre.md
+        - file: 250217/main.md
+        - file: 250317/viginere_brechen.ipynb
+          title: Vigenère-Chiffre brechen
+        - file: 250317/onetimepad.md
+          title: One-Time-Pad
+        - file: 250317/asymmetrie.md
+          title: Asymmetrische Verschlüsselung
+  - caption: Vergangene Semester
+    chapters:
+        - file: 241202/main.md
+          title: OOP
+        - file: 241209/refactoring.md
+        - file: 250106/netzwerke.md
+
