@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="26cm" height="7cm" viewBox="431 164 501 131" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="432" y="165" width="233.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="432" y="165" width="233.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="548.65" y="185">Schueler</text>
+    <rect style="fill: #ffffff" x="432" y="193" width="233.3" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="432" y="193" width="233.3" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="434.5" y="206.2">-personalien: Personalien</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="434.5" y="222.2">-zeugnisse: Zeugnis</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="434.5" y="238.2">-absenzen: Dictionary</text>
+    <rect style="fill: #ffffff" x="432" y="245" width="233.3" height="20"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="432" y="245" width="233.3" height="20"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="434.5" y="258.2">+promotionsentscheid(Zeugnis)</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="775" y="207" width="156.3" height="28"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="775" y="207" width="156.3" height="28"/>
+    <text font-size="16" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="853.15" y="227">Personalien</text>
+    <rect style="fill: #ffffff" x="775" y="235" width="156.3" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="775" y="235" width="156.3" height="52"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="777.5" y="248.2">-name: str</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="777.5" y="264.2">-vorname: str</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="777.5" y="280.2">-geburtsdatum: date</text>
+    <rect style="fill: #ffffff" x="775" y="287" width="156.3" height="8"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x="775" y="287" width="156.3" height="8"/>
+  </g>
+  <g>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="690.979,215 727.149,215 727.149,251 774.49,251 "/>
+    <polygon style="fill: #ffffff" points="665.807,215 679.807,210.2 693.807,215 679.807,219.8 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="665.807,215 679.807,210.2 693.807,215 679.807,219.8 "/>
+  </g>
+</svg>

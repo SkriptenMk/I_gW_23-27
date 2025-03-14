@@ -1,0 +1,642 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Einführung in Computernetzwerke &#8212; Unterlagen für den Informatikunterricht in der Klasse 2gW</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"tex": {"packages": {"[+]": ["ams"]}}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}, "loader": {"load": ["[tex]/ams"]}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '250106/netzwerke';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Refactoring" href="../241209/refactoring.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Unterlagen für den Informatikunterricht in der Klasse 2gW - Home"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Unterlagen für den Informatikunterricht in der Klasse 2gW - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Unterlagen für das obligatorische Fach Informatik
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Laufendes Semster</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../250113/caesar_chiffre.html">Caesar Chiffre</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../250217/main.html">Polyalphabetische Chiffren</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../250317/viginere_brechen.html">Vigenère-Chiffre brechen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../250317/onetimepad.html">One-Time-Pad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../250317/asymmetrie.html">Asymmetrische Verschlüsselung</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Vergangene Semester</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../241111/oop.html">Einführung OOP</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../241125/main.html">Programm für den 25. November 24</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../241125/modularitaet_oop.html">Modularität</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../241125/files.html">Arbeiten mit Dateien</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../241202/main.html">OOP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../241209/refactoring.html">Refactoring</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Einführung in Computernetzwerke</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/SkriptenMk/I_gW_23-27" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/SkriptenMk/I_gW_23-27/issues/new?title=Issue%20on%20page%20%2F250106/netzwerke.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/250106/netzwerke.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Einführung in Computernetzwerke</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#osi-layer-modell">OSI Layer Modell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#das-tcp-ip-protokoll">Das TCP/IP Protokoll</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ip-adressen">IP Adressen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ipv4">IPv4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ipv6">IPv6</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#domain-name-system">Domain Name System</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beobachtung-des-verbindungsaufbaus-mit-wireshark">Beobachtung des Verbindungsaufbaus mit Wireshark</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="einfuhrung-in-computernetzwerke">
+<h1>Einführung in Computernetzwerke<a class="headerlink" href="#einfuhrung-in-computernetzwerke" title="Link to this heading">#</a></h1>
+<p>Computernetzwerke ermöglichen die Kommunikation zwischen Computern. In dieser
+Unterrichtseinheit soll gezeigt werden, wie das technisch funktioniert.</p>
+<p>Um die Bedeutung dieser technischen Grundlagen für die Gesellschaft aufzuzeigen,
+sei hier auf ein Artikel aus der
+<a class="reference download internal" download="" href="../_downloads/5f6d83be713d7612451bd5230ed866a6/wie-china-unter-xi-das-internet-kontrolliert-ld.html"><span class="xref download myst">NZZ vom 24. Oktober 2022</span></a>
+zur Zensur des
+Internets in China verwiesen.</p>
+<section id="osi-layer-modell">
+<h2>OSI Layer Modell<a class="headerlink" href="#osi-layer-modell" title="Link to this heading">#</a></h2>
+<p>Das OSI (Open System Interconnection) Modell ermöglicht es, die Kommunikation
+über verschiedene technische Systeme hinweg zu beschreiben. Dieses theoretische
+Modell beschreibt sieben Schichten (Layer) der Kommunikation. Die unterste
+Schicht beschäftigt sich mit der Ebene der physikalischen Verbindung, die
+oberste mit der Kommunikation innerhalb einer spezifischen Anwendung. Eine
+detaillierte Beschreibung der einzelnen Schichten findet sich im entsprechenden
+<a class="reference external" href="https://de.wikipedia.org/wiki/OSI-Modell">Eintrag der Wikipedia</a>.</p>
+</section>
+<section id="das-tcp-ip-protokoll">
+<h2>Das TCP/IP Protokoll<a class="headerlink" href="#das-tcp-ip-protokoll" title="Link to this heading">#</a></h2>
+<p>Vom OSI Layer Modell werden technisch nicht alle Ebenen umgesetzt. Durchgesetzt
+hat sich das
+<a class="reference external" href="https://de.wikipedia.org/wiki/Internetprotokollfamilie#TCP/IP-Referenzmodell">TCP/IP
+Referenzmodell</a>
+(Transmission Control Protocol/Internet Protocol). Dieses benutzt lediglich vier
+der im OSI Modell beschriebenen Schichten. Eine Netzwerkschicht für die
+physikalische Verbindung, eine Internetschicht für die Vermittlung zwischen den
+Computern, eine Transportschicht für die eigentliche Übermittlung der Daten
+sowie eine Anwendungsschicht für die Auslieferung der Daten an die konkrete
+Anwendung auf dem Computer.</p>
+</section>
+<section id="ip-adressen">
+<h2>IP Adressen<a class="headerlink" href="#ip-adressen" title="Link to this heading">#</a></h2>
+<p>Aktuell soll hier vor Allem die Internetschicht betrachtet werden. Ausgangspunkt
+für die entsprechenden Beobachtungen ist dabei die IP-Adresse. IP-Adressen geben
+jedem mit einem Computernetzwerk verbundenen Computer eine eindeutige Adresse.
+Über diese Adresse ist der Computer im Netzwerk erreichbar.</p>
+<p>Aktuell bestehen zwei Versionen von IP-Adressen nebeneinander - IPv4- und
+IPv6-Adressen. Eigentlich sollten die IPv6-Adressen die IPv4-Adressen ablösen.
+Dieser Prozess geht allerdings nur sehr langsam vonstatten. Daher muss man sich
+derzeit mit beiden Versionen der IP-Adressen auseinandersetzten.</p>
+<section id="ipv4">
+<h3>IPv4<a class="headerlink" href="#ipv4" title="Link to this heading">#</a></h3>
+<p>IPv4-Adressen bestehen aus 32 Bits und werden in der Form 255.255.255.255
+dargestellt. Das ergibt total <span class="math notranslate nohighlight">\(2^{32} = 4'294'967'296\)</span> Adressen.</p>
+<p>Knapp 4.3 Mia Adressen reichen nicht aus, damit alle mit dem Internet
+verbundenen Rechner erreicht werden können. Um dieses Problem zu adressieren
+wurde einerseits die Adressierung mit IPv6-Adressen begonnen und andererseits
+innerhalb der IPv4-Adressen zwei Tricks angewendet.</p>
+<p>Der erste Trick im Adressraum von IPv4 ist die vergabe dynamischer
+IPv4-Adressen. Das bedeutet, dass die Internetanbieter eine IPv4-Adresse
+mehreren Kunden gleichzeitig zuteilen. Der Anbieter ist bei diesem Verfahren
+dafür verantwortlich, den Überblick zu behalten, welcher Rechner gerade unter
+welcher Adresse erreichbar ist.</p>
+<p>Der zweite Trick besteht in der Aufteilung der IPv4-Adressen in öffentliche und
+private Adressen. Dabei wird das Netzwerk in Subnetzwerke unterteilt. Das
+Subnetzwerk als ganzes wird dabei unter einer öffentlichen IPv4-Adresse
+erreicht. Innerhalb des Subnetzwerkes werden dann private Adressen vergeben.
+Diese sind aus dem Internet nicht direkt erreichbar. Das
+macht es theoretisch möglich, zu jeder öffentlichen Adresse nochmals alle
+privaten Adressen zu vergeben. Dies erhöht die Zahl verfügbarer Adressen
+deutlich.</p>
+<p>Die privaten Interessen sind die drei
+Blöcke</p>
+<ul class="simple">
+<li><p>10.0.0.0 – 10.255.255.255</p></li>
+<li><p>172.16.0.0 – 172.31.255.255</p></li>
+<li><p>192.168.0.0 – 192.168.255.255.</p></li>
+</ul>
+<p>Alle anderen Adressen sind öffentliche Adressen.</p>
+</section>
+<section id="ipv6">
+<h3>IPv6<a class="headerlink" href="#ipv6" title="Link to this heading">#</a></h3>
+<p>Diese (neueren) Adressen bestehen aus 128 Bits und werden
+<a class="reference external" href="https://de.wikipedia.org/wiki/Hexadezimalsystem">hexadezimal</a>
+dargestellt. Eine IPv6-Adresse hat für die Darstellung das Format
+2001:0db8:85a3:0000:0000:8a2e:0370:7344.</p>
+<p>Insgesamt stehen <span class="math notranslate nohighlight">\(2^{128}\)</span>, eine Zahl mit 39 Stellen, IPv6-Adressen zur
+Verfügung.</p>
+<p>Die Umstellung auf IPv6 wird noch einige Zeit in Anspruch nehmen.</p>
+</section>
+</section>
+<section id="domain-name-system">
+<h2>Domain Name System<a class="headerlink" href="#domain-name-system" title="Link to this heading">#</a></h2>
+<p>Für den Endnutzer sind IP-Adressen - weder IPv4 und schon gar nicht IPv6 - kaum
+direkt zu nutzen. Um dies zu umgehen wird eine dezentrale Datenbank betrieben,
+welche die Übersetzung von
+<a class="reference external" href="https://de.wikipedia.org/wiki/Uniform_Resource_Locator">URL</a>,
+wie zum Beispiel www.kbw.ch in IP-Adressen ermöglicht. Der Vorgang der
+Übersetzung einer URL in eine IP-Adresse wird als Namensauflösung (name
+resolution) bezeichnet. Das Datenbanksystem mit dem Adressverzeichnis
+hat den Namen <em>Domain Name System</em> (DNS).</p>
+<p>Damit einer der dezentralen DNS-Server erreicht werden kann, muss dessen Adresse
+auf dem lokalen Computer in der Systemeinstellung abgelegt sein. Welcher das auf
+einem konkreten Computer ist, findet sich in den Netzwerkeinstellungen des
+entsprechenden Computers (Netzwerk und Internet &gt; Netzwerkzugang &gt; Eigenschaften
+&gt; DNS-Server).</p>
+</section>
+<section id="beobachtung-des-verbindungsaufbaus-mit-wireshark">
+<h2>Beobachtung des Verbindungsaufbaus mit Wireshark<a class="headerlink" href="#beobachtung-des-verbindungsaufbaus-mit-wireshark" title="Link to this heading">#</a></h2>
+<p>Der Netzwerkverkehr eines Computers kann mit Hilfe von Wireshark beobachtet
+werden.
+<a class="reference external" href="https://www.wireshark.org/download.html">Die Anleitung für die Installation von Wireshark findet sich hier.</a></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./250106"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../241209/refactoring.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Refactoring</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#osi-layer-modell">OSI Layer Modell</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#das-tcp-ip-protokoll">Das TCP/IP Protokoll</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ip-adressen">IP Adressen</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ipv4">IPv4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ipv6">IPv6</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#domain-name-system">Domain Name System</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#beobachtung-des-verbindungsaufbaus-mit-wireshark">Beobachtung des Verbindungsaufbaus mit Wireshark</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Jacques Mock Schindler
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
