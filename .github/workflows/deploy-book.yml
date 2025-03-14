@@ -20,10 +20,12 @@ jobs:
         pip install ghp-import
     - name: Build book
       run: |
-        cd docs  # Wechsel ins docs Verzeichnis
+        cd docs
         jupyter-book build .
+        touch _build/html/.nojekyll  # Fügt .nojekyll zur Build-Ausgabe hinzu
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs/_build/html  # Angepasster Pfad
+        publish_dir: ./docs/_build/html
+        force_orphan: true  # Erzwingt einen sauberen gh-pages Branch
