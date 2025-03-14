@@ -16,6 +16,8 @@ parts:
           title: Asymmetrische Verschlüsselung
   - caption: Vergangene Semester
     chapters:
+        - file: 241028/main.md
+          title: Logik
         - file: 241111/oop.md
           title: Einführung OOP
           sections:
