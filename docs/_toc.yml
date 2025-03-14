@@ -16,6 +16,10 @@ parts:
           title: Asymmetrische Verschlüsselung
   - caption: Vergangene Semester
     chapters:
+        - file: 241021/main.md
+          sections:
+          - file: 241028/uebungen_iterables.ipynb
+          - file: 241028/uebungen_iterables_musterloesung.ipynb
         - file: 241028/main.md
           title: Logik
         - file: 241111/oop.md
