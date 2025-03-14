@@ -1,0 +1,29 @@
+name: deploy-book
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-book:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        pip install jupyter-book
+        pip install ghp-import
+    - name: Build book
+      run: |
+        cd docs  # Wechsel ins docs Verzeichnis
+        jupyter-book build .
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs/_build/html  # Angepasster Pfad
