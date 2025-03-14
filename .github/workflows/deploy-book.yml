@@ -1,4 +1,4 @@
-name: deploy-book
+name: Deploy JupyterBook
 
 on:
   push:
@@ -8,6 +8,19 @@ on:
 jobs:
   deploy-book:
     runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+      contents: write
+    
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    
     steps:
     - uses: actions/checkout@v2
     
@@ -25,14 +38,16 @@ jobs:
       run: |
         cd docs
         jupyter-book build .
+        touch _build/html/.nojekyll
         
-    - name: Create .nojekyll
-      run: |
-        touch docs/_build/html/.nojekyll
+    - name: Setup Pages
+      uses: actions/configure-pages@v2
+        
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: 'docs/_build/html'
         
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        folder: docs/_build/html
-        branch: gh-pages
-        clean: true
+      id: deployment
+      uses: actions/deploy-pages@v1
