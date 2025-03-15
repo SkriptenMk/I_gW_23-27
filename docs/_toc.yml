@@ -16,6 +16,8 @@ parts:
           title: Asymmetrische Verschlüsselung
   - caption: Vergangene Semester
     chapters:
+        - file: 240916/main.md
+        - file: 240916/timeline.ipynb 
         - file: 241021/main.md
           sections:
           - file: 240923/musterloesung_staatsuasgaben.ipynb
