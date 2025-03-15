@@ -1,4 +1,4 @@
-# Unterlagen für das obligatorische Fach Informatik
+# Obligatorische Fach Informatik (2gW)
 
 In diesem Repository sollen die Unterlagen für das obligatorische Fach Informatik zusammengetragen werden.
 
@@ -35,7 +35,10 @@ sowie der Benotung der mündlichen Beteiligung berechnet. Der
 Durchschnitt der Prüfungen zählt zu 90%, die mündliche Beteiligung zu
 10%.  
 Ab dem zweiten Semester wird konstruktive Kritik an den Unterlagen,
-welche durch einen Pull Request eingebracht wird, mit Maximal einem
+welche durch ein mir zugewiesenes Issue (der Zugang findet sich unter dem
+GitHub-Logo
+![](octocat_klein.png) 
+in der Kopfzeile) eingebracht wird, mit Maximal einem
 Notenpunkt auf die jeweils thematisch passende Prüfung angerechnet.
 
 Falls jemand eine persönliche Besprechung wünscht, [kann er sich hier für
