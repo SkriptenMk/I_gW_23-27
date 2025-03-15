@@ -17,7 +17,11 @@ parts:
   - caption: Vergangene Semester
     chapters:
         - file: 240909/main.md
+          sections:
+        - file: 240909/dictionaries.ipynb
+          title: Anwendungsübungen Dictionaries
         - file: 240909/dictionaries_muloe.ipynb
+          title: Musterlösung Dictionaries
         - file: 240916/main.md
         - file: 240916/timeline.ipynb 
         - file: 241021/main.md
