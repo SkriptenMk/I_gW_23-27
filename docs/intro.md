@@ -11,8 +11,8 @@ Das Programm entspricht dem aktuellen Stand der Planung. Es kann zu
 | Datum | Thema |
 | ----- | ----- |
 | 17.02.2025 | Kryptologie: Vigenère Chiffre |
-| 24.02.2025 | Kryptologie |
-| 17.03.2025 | Kryptologie |
+| 24.02.2025 | Kryptologie: Vigenère Chiffre brechen |
+| 17.03.2025 | Kryptologie: Public-Key Cryptography |
 | 24.03.2025 | Kryptologie |
 | 31.03.2025 | Kryptologie |
 | 07.04.2025 | Test (Kryptologie) |
