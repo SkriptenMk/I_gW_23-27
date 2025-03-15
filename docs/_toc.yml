@@ -18,6 +18,8 @@ parts:
     chapters:
         - file: 241021/main.md
           sections:
+          - file: 240923/musterloesung_staatsuasgaben.ipynb
+            title: Musterlösung Staatsausgaben
           - file: 241028/uebungen_iterables.ipynb
           - file: 241028/uebungen_iterables_musterloesung.ipynb
         - file: 241028/main.md
