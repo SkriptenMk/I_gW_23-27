@@ -16,6 +16,11 @@ parts:
           title: Asymmetrische Verschlüsselung
   - caption: Vergangene Semester
     chapters:
+        - file: 240826/einfuehrung.md
+          title: Python Listen
+          sections:
+          - file: 240826/listen.ipynb
+          - file: 240902/listenmanipulation.md
         - file: 240909/main.md
           sections:
           - file: 240909/dictionaries.ipynb
