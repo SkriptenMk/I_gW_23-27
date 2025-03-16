@@ -1,6 +1,8 @@
 # Obligatorische Fach Informatik (2gW)
 
-In diesem Repository sollen die Unterlagen für das obligatorische Fach Informatik zusammengetragen werden.
+In diesem Repository sollen die Unterlagen für das obligatorische Fach
+Informatik zusammengetragen werden.
+[Die bisherigen Unterlagen sind hier verlinkt.](https://i-gw-23-27.github.io/Skript/)
 
 ## Programm Frühlingssemester 2025
 
