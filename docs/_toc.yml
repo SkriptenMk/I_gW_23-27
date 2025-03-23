@@ -14,6 +14,8 @@ parts:
           title: One-Time-Pad
         - file: 250317/asymmetrie.md
           title: Asymmetrische Verschlüsselung
+        - file: 250324/komplexitaet.ipynb
+          title: Komplexitätstheorie
   - caption: Vergangene Semester
     chapters:
         - file: 240826/einfuehrung.md
