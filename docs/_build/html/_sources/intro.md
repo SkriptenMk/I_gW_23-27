@@ -1,4 +1,4 @@
-# Obligatorische Fach Informatik (2gW)
+# Obligatorisches Fach Informatik (2gW)
 
 In diesem Repository sollen die Unterlagen für das obligatorische Fach
 Informatik zusammengetragen werden.
