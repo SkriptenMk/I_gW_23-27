@@ -15,7 +15,10 @@ parts:
         - file: 250317/asymmetrie.md
           title: Asymmetrische Verschlüsselung
         - file: 250324/komplexitaet.ipynb
-          title: Komplexitätstheorie
+          title: RSA-Verschlüsselung
+          sections:
+          - file: 250331/anwendung_rsa.ipynb
+            title: Anwendungsübung RSA
   - caption: Vergangene Semester
     chapters:
         - file: 240826/einfuehrung.md
