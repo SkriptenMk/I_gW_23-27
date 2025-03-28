@@ -4,7 +4,7 @@
 format: jb-book
 root: intro.md
 parts:
-  - caption: Laufendes Semster
+  - caption: Kryptologie
     chapters:
         - file: 250113/caesar_chiffre.md
         - file: 250217/main.md
@@ -15,7 +15,10 @@ parts:
         - file: 250317/asymmetrie.md
           title: Asymmetrische Verschlüsselung
         - file: 250324/komplexitaet.ipynb
-          title: Komplexitätstheorie
+          title: RSA-Verschlüsselung
+          sections:
+          - file: 250331/anwendung_rsa.ipynb
+            title: Anwendungsübung RSA
         - file: 250407/lernziele.md
           title: Lernziele
   - caption: Vergangene Semester
