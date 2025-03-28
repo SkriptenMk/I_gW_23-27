@@ -4,7 +4,7 @@
 format: jb-book
 root: intro.md
 parts:
-  - caption: Laufendes Semster
+  - caption: Kryptologie
     chapters:
         - file: 250113/caesar_chiffre.md
         - file: 250217/main.md
