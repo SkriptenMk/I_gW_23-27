@@ -19,6 +19,8 @@ parts:
           sections:
           - file: 250331/anwendung_rsa.ipynb
             title: Anwendungsübung RSA
+        - file: 250407/lernziele.md
+          title: Lernziele
   - caption: Vergangene Semester
     chapters:
         - file: 240826/einfuehrung.md
