@@ -1,4 +1,4 @@
-# Lernziele für die Prüfung vom 7. April 2015
+# Lernziele für die Prüfung vom 7. April 2025
 
 Die Prüfung wird nur eine Lektion umfassen. Sie findet mit Papier und Bleistift
 statt. Sie dürfen eine Zusammenfassung im Umfang von einer Seite A4 verwenden.
