@@ -21,6 +21,10 @@ parts:
             title: Anwendungsübung RSA
         - file: 250407/lernziele.md
           title: Lernziele
+  - caption: Python Anwendungen in WR
+    chapters:
+        - file: 250407/kuendigung.ipynb
+          title: Berechnung der Kündigungsfrist
   - caption: Vergangene Semester
     chapters:
         - file: 240826/einfuehrung.md
