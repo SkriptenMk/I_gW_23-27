@@ -25,6 +25,9 @@ parts:
     chapters:
         - file: 250407/kuendigung.ipynb
           title: Berechnung der Kündigungsfrist
+          sections:
+          - file: 250407/kuendigung_musterloesung.ipynb
+            title: Musterlösung Kündigungsfrist
   - caption: Vergangene Semester
     chapters:
         - file: 240826/einfuehrung.md
