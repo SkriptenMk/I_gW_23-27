@@ -1,0 +1,54 @@
+\documentclass[a4paper]{scrreprt}
+\usepackage[german]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{ragged2e}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep}
+
+\begin{document}
+\section*{2gW, 7. April 25, Einführung Pyhton Anwendungen WR}
+\begin{longtable}{p{1.5cm}>{\RaggedRight}p{7.5cm}p{2.5cm}}
+    \toprule
+    \emph{Zeit}&\emph{Inhalt}&\emph{Methode}\\
+    \midrule
+    \endhead
+
+    \midrule
+    \multicolumn{3}{c}{\begin{tiny}\textit{to be continued}\end{tiny}}\\
+    \midrule
+    \endfoot
+
+    \bottomrule
+    \endlastfoot
+
+    0945&Situierung Vorbereitung Stellvertretung&Vortrag\\ [3pt]
+        &Problem: Kündigung als Empfangsbedürftige Erklärung&\\
+        &Repetition Kündigungsfristen im Mietrecht&Lehrgespräch\\ [3pt]
+    0950&Aufsetzen der Arbeitsumgebung&Einzelarbeit\\
+        &\vspace{-7.5mm}
+         \begin{itemize}
+             \item[--] Übernahme des Arbeitsblattes nach Colab oder
+             \item[--] Aufsetzen eines Ordners für WR-Anwendungen 
+         \end{itemize}&\\ [3pt]
+
+    0955&Einführung Python \texttt{datetime} Library&Vortrag\\
+        &Ausprobieren mit dem eigenen Geburtstag&\\ [3pt]
+
+    1000&Einführung Python \texttt{holiday} Library&Vortrag\\
+        &Ausprobieren mit dem 1. Mai&\\
+
+    1005&Funktion für die Berechnung des Zustelldatums&Lehrgespräch\\
+        &Zustelldauer, Berücksichtigung von Wochenenden und
+        Feiertagen&\\ [3pt]
+
+    1010&Implementation der Funktion
+    \texttt{get\_zustelldatum}&Einzelarbeit\\ [3pt]
+
+    1025&Besprechung des Resultates&Lehrgespräch\\
+
+
+\end{longtable}
+\end{document}
