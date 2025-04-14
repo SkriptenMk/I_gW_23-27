@@ -1,0 +1,41 @@
+Jahr;Rechnung;level1;level2;level3;Konto;Betrag
+2020;Bilanz;Aktiven;Umlaufvermögen;Flüssige Mittel;Kasse;10
+2020;Bilanz;Aktiven;Umlaufvermögen;Flüssige Mittel;Post;13
+2020;Bilanz;Aktiven;Umlaufvermögen;Flüssige Mittel;Bank;2
+2020;Bilanz;Aktiven;Umlaufvermögen;Forderungen;FLL;40
+2020;Bilanz;Aktiven;Umlaufvermögen;Forderungen;Delkredere;-4
+2020;Bilanz;Aktiven;Umlaufvermögen;Vorräte;Waren;70
+2020;Bilanz;Aktiven;Anlagevermögen;Materielles AV;Mobilien;50
+2020;Bilanz;Aktiven;Anlagevermögen;Materielles AV;WB Mobilien;-20
+2020;Bilanz;Aktiven;Anlagevermögen;Materielles AV;Immoblien;350
+2020;Bilanz;Passiven;Fremdkapital;Kurzfristiges FK;VLL;45
+2020;Bilanz;Passiven;Fremdkapital;Kurzfristiges FK;Bank;9
+2020;Bilanz;Passiven;Fremdkapital;Kurzfristiges FK;Dividenden;5
+2020;Bilanz;Passiven;Fremdkapital;Kurzfristiges FK;PRA;2
+2020;Bilanz;Passiven;Fremdkapital;Langfristiges FK;Hypothek;210
+2020;Bilanz;Passiven;Eigenkapital;Grundkapital;Aktienkapital;220
+2020;Bilanz;Passiven;Eigenkapital;Zuwachskapital;Reserven;20
+2020;Bilanz;Passiven;Eigenkapital;Zuwachskapital;Gewinnvortrag;0
+2021;Erfolgsrechnung;Ertrag;Umsatz;;Warenertrag;560
+2021;Erfolgsrechnung;Aufwand;Umsatz;;Warenaufwand;392
+2021;Erfolgsrechnung;Aufwand;Betrieb;;Personalaufwand;110
+2021;Erfolgsrechnung;Aufwand;Betrieb;;Sonstiger Betriebsaufwand;20
+2021;Erfolgsrechnung;Aufwand;Betrieb;;Abschreibungen;15
+2021;Erfolgsrechnung;Aufwand;Betrieb;;Finanzaufwand;5
+2021;Bilanz;Aktiven;Umlaufvermögen;Flüssige Mittel;Kasse;5
+2021;Bilanz;Aktiven;Umlaufvermögen;Flüssige Mittel;Post;58
+2021;Bilanz;Aktiven;Umlaufvermögen;Flüssige Mittel;Bank;2
+2021;Bilanz;Aktiven;Umlaufvermögen;Forderungen;FLL;55
+2021;Bilanz;Aktiven;Umlaufvermögen;Forderungen;Delkredere;-5
+2021;Bilanz;Aktiven;Umlaufvermögen;Vorräte;Waren;55
+2021;Bilanz;Aktiven;Anlagevermögen;Materielles AV;Mobilien;70
+2021;Bilanz;Aktiven;Anlagevermögen;Materielles AV;WB Mobilien;-25
+2021;Bilanz;Aktiven;Anlagevermögen;Materielles AV;Immoblien;340
+2021;Bilanz;Passiven;Fremdkapital;Kurzfristiges FK;VLL;33
+2021;Bilanz;Passiven;Fremdkapital;Kurzfristiges FK;Bank;11
+2021;Bilanz;Passiven;Fremdkapital;Kurzfristiges FK;Dividenden;10
+2021;Bilanz;Passiven;Fremdkapital;Kurzfristiges FK;PRA;3
+2021;Bilanz;Passiven;Fremdkapital;Langfristiges FK;Hypothek;200
+2021;Bilanz;Passiven;Eigenkapital;Grundkapital;Aktienkapital;270
+2021;Bilanz;Passiven;Eigenkapital;Zuwachskapital;Reserven;26
+2021;Bilanz;Passiven;Eigenkapital;Zuwachskapital;Gewinnvortrag;2
