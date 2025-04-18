@@ -1,0 +1,24 @@
+Kontonummer,Kontoname,Eroeffnung,Abschluss
+1000,Kasse,10,5
+1010,Post,13,58
+1020,Bankguthaben,2,2
+1100,FLL,40,55
+1109,WBForderungen,-4,-5
+1200,Waren,70,55
+1510,Mobilien,50,70
+1519,WBMobilien,-20,25
+1600,Immobilien,350,340
+2000,VLL,45,33
+2100,Bankschuld,9,11
+2261,Dividende,5,10
+2300,PRA,2,3
+2451,Hypothek,210,200
+2800,Aktienkapital,220,270
+2950,Reserven,20,26
+2970,Gewinnvortrag,0,2
+3200,Warenertrag,,560
+4200,Warenaufwand,,-392
+5000,Personalaufwand,,-110
+6700,Sonstiger Betriebsufwand,,-20
+6800,Abschreibungen,,-15
+6900,Finanzaufwand,,-5
