@@ -19,7 +19,7 @@ Das Programm entspricht dem aktuellen Stand der Planung. Es kann zu
 | 31.03.2025 | Kryptologie |
 | 07.04.2025 | Test (Kryptologie) |
 | 14.04.2025 | Jupyter Notebooks im WR Unterricht |
-| 05.05.2025 | Jupyter Notebooks im WR Unterricht |
+| 05.05.2025 | Jupyter Notebooks im WR Unterricht <br> Überprüfung der Funktion `get_zustelldatum()` <br> Implementation der Funktion `get_kuendigungstermin()` |
 | 12.05.2025 | Jupyter Notebooks im WR Unterricht |
 | 19.05.2025 | Jupyter Notebooks im WR Unterricht |
 | 26.05.2025 | Jupyter Notebooks im WR Unterricht |
