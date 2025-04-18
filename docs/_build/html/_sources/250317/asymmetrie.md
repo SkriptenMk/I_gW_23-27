@@ -59,7 +59,7 @@ Nach der Addition der Nachbarn, stellt sich der Graph folgendermassen dar:
 ![](graph2.svg)
 
 Der verschlüsselte Wert kann jetzt als Zahlenfolge
-123/570/229/426/827/770/306/570/627 übermittelt werden.
+123/570/229/426/827/770/306/370/627 übermittelt werden.
 
 Um die ursprüngliche Zahl zu rekonstruieren, muss ein unberechtigter Lauscher
 das folgende Gleichungssystem lösen:
