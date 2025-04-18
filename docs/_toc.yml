@@ -11,6 +11,8 @@ parts:
           sections:
           - file: 250407/kuendigung_musterloesung.ipynb
             title: Musterlösung Kündigungsfrist
+        - file: 250512/mfr.ipynb
+          title: Mittelflussrechnung
   - caption: Kryptologie
     chapters:
         - file: 250113/caesar_chiffre.md
