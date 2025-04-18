@@ -4,6 +4,13 @@
 format: jb-book
 root: intro.md
 parts:
+  - caption: Python Anwendungen in WR
+    chapters:
+        - file: 250407/kuendigung.ipynb
+          title: Berechnung der Kündigungsfrist
+          sections:
+          - file: 250407/kuendigung_musterloesung.ipynb
+            title: Musterlösung Kündigungsfrist
   - caption: Kryptologie
     chapters:
         - file: 250113/caesar_chiffre.md
@@ -19,15 +26,6 @@ parts:
           sections:
           - file: 250331/anwendung_rsa.ipynb
             title: Anwendungsübung RSA
-        - file: 250407/lernziele.md
-          title: Lernziele
-  - caption: Python Anwendungen in WR
-    chapters:
-        - file: 250407/kuendigung.ipynb
-          title: Berechnung der Kündigungsfrist
-          sections:
-          - file: 250407/kuendigung_musterloesung.ipynb
-            title: Musterlösung Kündigungsfrist
   - caption: Vergangene Semester
     chapters:
         - file: 240826/einfuehrung.md
