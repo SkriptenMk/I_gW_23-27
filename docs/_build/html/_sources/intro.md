@@ -20,9 +20,9 @@ Das Programm entspricht dem aktuellen Stand der Planung. Es kann zu
 | 07.04.2025 | Test (Kryptologie) |
 | 14.04.2025 | Jupyter Notebooks im WR Unterricht |
 | 05.05.2025 | Jupyter Notebooks im WR Unterricht <br> Überprüfung der Funktion `get_zustelldatum()` <br> Implementation der Funktion `get_kuendigungstermin()` |
-| 12.05.2025 | Jupyter Notebooks im WR Unterricht |
-| 19.05.2025 | Jupyter Notebooks im WR Unterricht |
-| 26.05.2025 | Jupyter Notebooks im WR Unterricht |
+| 12.05.2025 | Jupyter Notebooks im WR Unterricht <br> Berechnung des Cash Flow in einem Jupyter Notebook |
+| 19.05.2025 | Jupyter Notebooks im WR Unterricht <br> Formatierung der Ausgabe und <br> Zusammenfassung der Berechnung in einer Funktion |
+| 26.05.2025 | Jupyter Notebooks im WR Unterricht <br> Berechnung des Mittelflusses aus Investitionstätigkeit |
 | 02.06.2025 | Jupyter Notebooks im WR Unterricht |
 | 16.06.2025 | Test (Jupyter in WR) |
 | 23.06.2025 | Jupyter Notebooks im WR Unterricht |
