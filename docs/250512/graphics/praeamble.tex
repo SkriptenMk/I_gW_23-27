@@ -1,0 +1,63 @@
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault} % Setzt die Standardschriftart auf sans-serif
+
+\usepackage{tikz}
+\usetikzlibrary{
+    shapes.geometric,
+    arrows.meta,
+    positioning,
+    fit,
+    backgrounds
+}
+
+\usepackage{flowchart}
+
+\tikzset{
+    endpoint/.style={
+        draw,
+        rectangle,
+        rounded corners=2mm,
+        minimum width=2.5cm,
+        minimum height=0.8cm,
+        align=center,
+        fill=green!15  
+    },
+    process/.style={
+        draw,
+        rectangle,
+        rounded corners,
+        minimum width=2.5cm,
+        minimum height=0.8cm,
+        align=center,
+        fill=violet!15
+    },
+    decision/.style={
+        draw,
+        diamond,
+        aspect=2,
+        minimum width=3cm,
+        align=center,
+        fill=yellow!20
+    },
+    helper/.style={
+        draw,
+        rectangle,
+        rounded corners,
+        minimum width=2.5cm,
+        minimum height=0.8cm,
+        align=center,
+        fill=cyan!15
+    },
+    predefined process/.style={  % Note the space in the name
+        % Basic shape and border
+        draw,
+        predproc,
+        minimum width=2.5cm,
+        align=center,
+        fill=blue!10
+    },
+    arrow/.style={
+        -Stealth,
+        thick
+    }
+}

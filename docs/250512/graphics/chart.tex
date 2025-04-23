@@ -1,0 +1,24 @@
+\documentclass[tikz,border=3mm]{standalone}
+
+\input{praeamble.tex}
+
+\begin{document}
+\begin{tikzpicture}
+    \node[endpoint] (start) {Start};
+    \node[process, right=of start] (init) {Initialize Dictionary \\
+    \texttt{investitionen}};
+    \node[predefined process, right=of init] (mob) {Berechne \\ Investitionen in
+    \\ Mobilien};
+    \node[predefined process, right=of mob] (imm) {Berechne \\ Investitionen in
+    \\ Immobilien};
+    \node[predefined process, right=of imm] (form) {Formatiere \\ Ausgabe};
+    \node[endpoint, right=of form] (end) {Ende};
+
+    \draw[arrow] (start) -- (init);
+    \draw[arrow] (init) -- (mob);
+    \draw[arrow] (mob) -- (imm);
+    \draw[arrow] (imm) -- (form);
+    \draw[arrow] (form) -- (end);
+    
+\end{tikzpicture}
+\end{document}
