@@ -1,0 +1,35 @@
+\documentclass{standalone}
+\usepackage{booktabs}
+\usepackage[scaled]{helvet}
+\renewcommand{\familydefault}{\sfdefault} % Setzt die Standardschriftart auf sans-serif
+
+\begin{document}
+\begin{tabular}{lrrrr|lrrrr}
+    \multicolumn{10}{c}{\textbf{Eröffnungsbilanz}}\\
+    \toprule
+    \multicolumn{5}{l|}{\textbf{Umlaufvermögen}}&
+    \multicolumn{5}{l}{\textbf{Fremdkapital}}\\
+    \multicolumn{5}{l|}{\textit{Flüssige Mittel}}&
+    \multicolumn{5}{l}{\textit{Kurzfristiges Fremdkapital}}\\
+    Kasse&&10&&&VLL&45&&&\\
+    Post&&13&&&Bankschuld&9&&&\\
+    Bankguthaben&&2&25&&Dividende&5&&&\\
+    \multicolumn{5}{l|}{\textit{Forderungen}}&
+    PRA&2&61&&\\
+    FLL&40&&&&\multicolumn{5}{l}{\textit{Langfristiges Fremdkapital}}\\
+    WB Forderungen&- 4&36&36&&Hypothek&&210&271&\\
+    \multicolumn{5}{l|}{\textit{Vorräte}}&
+    \multicolumn{5}{l}{\textbf{Eigenkapital}}\\
+    Waren&&&70&131&
+    \multicolumn{5}{l}{\textit{Grundkapital}}\\
+    \multicolumn{5}{l|}{\textbf{Anlagevermögen}}&
+    Aktienkapital&&220&&\\
+    Mobilien&50&&&&
+    \multicolumn{5}{l}{\textit{Zuwachskaptial}}\\
+    WB Mobilien&- 20&30&&&Reserven&20&&&\\
+    Immobilien&&350&380&380&Gewinnvortrag&0&20&240&\\
+    \midrule
+    &&&&511&&&&511\\
+    \bottomrule
+\end{tabular}
+\end{document}

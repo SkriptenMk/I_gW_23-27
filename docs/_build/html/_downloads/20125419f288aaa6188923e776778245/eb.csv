@@ -1,0 +1,17 @@
+Kontonummer,Kontoname,Betrag
+1000,Kasse,10
+1010,Post,13
+1020,Bankguthaben,2
+1100,FLL,40
+1109,WBForderungen,-4
+1200,Waren,70
+1510,Mobilien,50
+1519,WBMobilien,-20
+1600,Immobilien,350
+2000,VLL,45
+2100,Bankschuld,9
+2261,Dividende,5
+2451,Hypothek,210
+2800,Aktienkapital,220
+2950,Reserven,20
+2970,Gewinnvortrag,0

@@ -11,6 +11,10 @@ parts:
           sections:
           - file: 250407/kuendigung_musterloesung.ipynb
             title: Musterlösung Kündigungsfrist
+        - file: 250512/mfr.ipynb
+          title: Berechnung des Cash Flows
+        - file: 250512/investition.ipynb
+          title: Mittelflus aus Investition
   - caption: Kryptologie
     chapters:
         - file: 250113/caesar_chiffre.md
