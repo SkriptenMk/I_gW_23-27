@@ -23,8 +23,8 @@ Das Programm entspricht dem aktuellen Stand der Planung. Es kann zu
 | 12.05.2025 | Jupyter Notebooks im WR Unterricht <br> Berechnung des Cash Flow in einem Jupyter Notebook |
 | 19.05.2025 | Jupyter Notebooks im WR Unterricht <br> Formatierung der Ausgabe und <br> Zusammenfassung der Berechnung in einer Funktion |
 | 26.05.2025 | Jupyter Notebooks im WR Unterricht <br> Berechnung des Mittelflusses aus Investitionstätigkeit |
-| 02.06.2025 | Jupyter Notebooks im WR Unterricht |
-| 16.06.2025 | Test (Jupyter in WR) |
+| 02.06.2025 | Individuelle Arbeit am Lernbericht |
+| 16.06.2025 | Abgabe Lernbericht |
 | 23.06.2025 | Jupyter Notebooks im WR Unterricht |
 | 30.06.2025 | Jupyter Notebooks im WR Unterricht |
 | 07.07.2025 | Jupyter Notebooks im WR Unterricht |

@@ -7,14 +7,22 @@ parts:
   - caption: Python Anwendungen in WR
     chapters:
         - file: 250407/kuendigung.ipynb
-          title: Berechnung der Kündigungsfrist
+          title: Kündigungsfrist im Mietrecht
           sections:
           - file: 250407/kuendigung_musterloesung.ipynb
             title: Musterlösung Kündigungsfrist
-        - file: 250512/mfr.ipynb
-          title: Berechnung des Cash Flows
-        - file: 250512/investition.ipynb
-          title: Mittelflus aus Investition
+        - file: 250512/intro.md
+          title: Mittelflussrechnung
+          sections:
+          - file: 250512/mfr.ipynb
+            title: Berechnung des Cash Flows
+          - file: 250512/investition.ipynb
+            title: Mittelflus aus Investition
+        - file: 250425/leistungsbeurteilung.md
+          title: Leistungsbeurteilug
+          sections:
+          - file: 250425/auftrag.md
+            title: Zusatzleistung
   - caption: Kryptologie
     chapters:
         - file: 250113/caesar_chiffre.md
